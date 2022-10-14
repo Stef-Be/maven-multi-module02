@@ -6,11 +6,13 @@ import com.switchfully.stockexchange.domain.StockCurrency;
 import com.switchfully.stockexchange.domain.StockPrice;
 import com.switchfully.stockexchange.domain.StockRepository;
 import com.switchfully.stockexchange.interfaces.ExternalStockInformationService;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.logging.Logger;
 import java.util.logging.Level;
 
+@Service
 public class StockService {
 
     private static final Logger LOGGER = Logger.getLogger(StockService.class.getName());

@@ -1,9 +1,11 @@
 package com.switchfully.stockexchange.api;
 
 import com.switchfully.stockexchange.domain.Stock;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
+@Component
 public class StockMapper {
     public StockDTO mapToDTO(Stock stock) {
         if (stock.getPrice() == null) {
